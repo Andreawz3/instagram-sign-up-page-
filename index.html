@@ -10,37 +10,37 @@
 <body>
     <div id="container">
         <div id="details">
-            <video src="./video/insta-video.mov" autoplay="autoplay" loop="loop" muted="muted"></video>
+            <video src="./image&video/insta-video.mov" autoplay="autoplay" loop="loop" muted="muted"></video>
             <div id="inputInfo">
                 <div id="logIn">
-                    <h1>Instagram</h1>
+                    <img src="./image&video/brand-name.jpeg" alt="insta-name">
                     <form action="">
-                        <input type="text" placeholder="Phone number, username, or email">
-                        <input type="text" placeholder="Password">
-                        <button id="logInButton">Log in</button>   
+                        <input class="smallFontSize" type="text" placeholder="Phone number, username, or email">
+                        <input class="smallFontSize" type="text" placeholder="Password">
+                        <button id="logInButton" class="regularFontSize cursorPointer">Log in</button>   
                     </form>
                     <fieldset> 
-                        <legend> OR </legend>
+                        <legend class="smallFontSize"> OR </legend>
                     </fieldset>
                     <div id="facebook">
                         <i class='fab fa-facebook-square'></i>
-                        <a id="facebookLogIn" href="wwww.facebook.com">Log in with Facebook</a>
+                        <a id="facebookLogIn" class="regularFontSize cursorPointer textDecoration" href="wwww.facebook.com">Log in with Facebook</a>
                     </div>                   
-                    <a id="forgotPassw" href="#">Forgot password?</a>
+                    <a id="forgotPassw" class="smallFontSize cursorPointer textDecoration" href="#">Forgot password?</a>
                 </div>
-                <div>
-                    <p>Don't have an Account?</p>
-                    <a href="#">Sign up</a>
+                <div id="createAccnt">
+                    <p class="regularFontSize">Don't have an Account?</p>
+                    <a class="regularFontSize cursorPointer textDecoration" href="#">Sign up</a>
                 </div>
-                <p>Get the app.</p>
+                <p class="regularFontSize">Get the app.</p>
                 <div>
-                    <button>Donwload on the App Store</button>
-                    <button>Get it on Google Play</button>
+                    <a class="cursorPointer" href="#"><img src="./image&video/appStore.png" alt="appStore"></a>
+                    <a class="cursorPointer" href="#"><img src="./image&video/googlePlay.png" alt="googlePlay"></a>
                 </div>
             </div>            
         </div>
-        <!-- <Footer>
-            <div>
+        <footer>
+            <div id="sources">
                 <a href="#">Meta</a>
                 <a href="#">About</a>
                 <a href="#">Blog</a>
@@ -54,11 +54,11 @@
                 <a href="#">Instagram Lite</a>
                 <a href="#">Contact Uploading & Non-Users</a>
             </div>
-            <div>
-                <a href="#">English</a>
-                <p>2023 Instagram from Meta</p>
+            <div id="language">
+                <a class="textDecoration" href="#">English <i class='fas fa-angle-down'></i></a>
+                <p><i class="fa fa-copyright"></i> 2023 Instagram from Meta</p>
             </div>
-        </Footer> -->
+        </footer>
     </div>
 </body>
 </html>

@@ -3,19 +3,23 @@ body {
     margin: 0;
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
 }
+#container {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+}
 #details {
     display: flex;
     justify-content: center;
-    margin-top: 10%;
+    align-items: center;
+    padding-top: 5%;
+    text-align: center;
+    height: 100vh;
 }
 #inputInfo {
+    width: 100%;
+    max-width: 350px;
     padding-top: 35px;
-}
-h1 {
-    text-align: center;
-    font-size: 50px;
-    font-family: 'Kalam', cursive;
-    margin: 20px 0;
 }
 #logIn {
     background-color: white;
@@ -24,6 +28,14 @@ h1 {
     flex-direction: column;
     text-align: center;
     padding: 0 30px;
+}
+#logIn img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+    max-width: 190px;
+    padding: 40px 0;
 }
 form {
     display: flex;
@@ -34,11 +46,9 @@ input {
     border-radius: 5px;
     border: 1px solid lightgray;
     background-color: #fafafa;
-    font-size: 12px;
     padding: 10px;
 }
 #logInButton {
-    font-size: 14px;
     font-weight: bold;
     background-color: #6eb7f9;
     color: white;
@@ -66,20 +76,95 @@ fieldset {
     padding-right: 8px;
 }
 #facebookLogIn {
-    text-decoration: none;
     color: #385185;
     font-weight: 600;
-    font-size: 14px;
-}
-#forgotPassw {
-    text-decoration: none;
-    color: #385185;
-    font-size: 12px;
-    margin-bottom: 20px;
 }
 legend {
     padding: 0 10px;
-    font-size: 12px;
     font-weight: 500;
     color: gray;
+}
+#forgotPassw {
+    color: #385185;
+    margin-bottom: 20px;
+}
+#createAccnt {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+    background-color: white;
+    border: 1px solid lightgray;
+    margin-top: 10px;
+    padding: 10px 0;
+}
+#createAccnt a {
+    color: #4295f6;
+    font-weight: 500;
+    padding: 5px 0;
+}
+footer {
+    padding-bottom: 50px;
+}
+#sources {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+#sources a {
+    text-decoration: none;
+    margin: 0 8px 12px 8px;
+    color: gray;
+    cursor: pointer;
+    font-size: 12px;
+}
+#language {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 12px;
+    color: gray;
+    gap: 15px;
+}
+#language a {
+    color: gray;
+}
+.regularFontSize {
+    font-size: 14px;
+}
+.smallFontSize {
+    font-size: 12px;
+}
+.cursorPointer {
+    cursor: pointer;
+}
+.textDecoration {
+    text-decoration: none;
+}
+
+@media screen and (max-width: 820px) {
+    #details {
+        padding-top: 0;
+    }
+    video {
+        display: none;
+    }
+}
+@media screen and (max-width: 414px) {
+    #details {
+        align-items: baseline;
+        padding-top: 0;
+    }
+    #logIn {
+        background-color: #fafafa;
+        border: none;
+    }
+    #inputInfo {
+        padding: 0;
+    }
+    #createAccnt {
+        background-color: #fafafa;
+        border: none;
+        margin: 65px 0;
+    }
 }
